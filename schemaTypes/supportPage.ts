@@ -62,10 +62,6 @@ export const supportPageSchema = defineType({
           type: 'string',
         },
         {
-          name: 'infoText',
-          type: 'string',
-        },
-        {
           name: 'levels',
           type: 'array',
           of: [{
