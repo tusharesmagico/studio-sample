@@ -13,7 +13,7 @@ export const supportPageSchema = defineType({
     defineField({
       name: 'section1',
       title: 'Section 1',
-      type: 'object',
+      type: 'object',  
       fields: [
         {
           name: 'mainTitle',
