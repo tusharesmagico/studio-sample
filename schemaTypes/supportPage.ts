@@ -5,7 +5,11 @@ export const supportPageSchema = defineType({
   title: 'Support Page',
   type: 'document',
   fields: [
-
+ defineField({
+    name:"title",
+    title: "Title",
+    type: "string"
+ }),
     defineField({
       name: 'section1',
       title: 'Section 1',
