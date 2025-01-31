@@ -11,6 +11,34 @@ export const paymentGatewayPage = defineType({
     validation: (rule) => rule.required(),
   }),
   defineField({
+    name: 'heroBanner',
+    title: 'Hero Banner',
+    type: 'object',
+    fields: [
+      {
+        name: 'text',
+        type: 'string',
+      },
+      {
+        name: 'startIndexOfGradientText',
+        type: 'number',
+      },
+      {
+        name: 'endingIndexOfGradientText',
+        type: 'number',
+      },
+    {name: "subText", type:'string'}
+    
+      ,
+      defineField({
+        name: 'heroImage', 
+        title: 'Hero Image',
+        type: 'image',
+        validation: (rule) => rule.required()
+      }),
+    ]
+  }),
+  defineField({
     name: 'bestInClass',
     title: 'BEST IN CLASS',
     type: 'reference',

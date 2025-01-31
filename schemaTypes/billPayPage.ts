@@ -11,6 +11,57 @@ export const billPayPage = defineType({
     validation: (rule) => rule.required(),
   }),
   defineField({
+    name: 'heroBanner',
+    title: 'Hero Banner',
+    type: 'object',
+    fields: [
+      {
+        name: 'line1',
+        type: 'string',
+      },
+      {
+        name: 'startIndexOfGradientTextForLine1',
+        type: 'number',
+      },
+      {
+        name: 'endingIndexOfGradientTextForLine1',
+        type: 'number',
+      },
+      {
+        name: 'line2',
+        type: 'string',
+      },
+      {
+        name: 'startIndexOfGradientTextForLine2',
+        type: 'number',
+      },
+      {
+        name: 'endingIndexOfGradientTextForLine2',
+        type: 'number',
+      },
+      defineField({
+        name: 'points',
+        type: 'array',
+        of : [
+          {
+           type: "string"   
+          }
+        ]
+      }),
+      {
+        name: "experienceOnTataNeuButtonLink",
+        type: 'string'
+      }
+      ,
+      defineField({
+        name: 'heroImage', 
+        title: 'Hero Image',
+        type: 'image',
+        validation: (rule) => rule.required()
+      }),
+    ]
+  }),
+  defineField({
     name: 'bestInClass',
     title: 'BEST IN CLASS',
     type: 'reference',

@@ -11,6 +11,37 @@ export const giftCardPage = defineType({
     validation: (rule) => rule.required(),
   }),
   defineField({
+    name: 'heroBanner',
+    title: 'Hero Banner',
+    type: 'object',
+    fields: [
+      {
+        name: 'text',
+        type: 'string',
+      },
+      {
+        name: 'startIndexOfGradientText',
+        type: 'number',
+      },
+      {
+        name: 'endingIndexOfGradientText',
+        type: 'number',
+      },
+    {name: "subText", type:'string'},
+    {
+      name: "experienceOnTataNeuButtonLink",
+      type: 'string'
+    }
+      ,
+      defineField({
+        name: 'heroImage', 
+        title: 'Hero Image',
+        type: 'image',
+        validation: (rule) => rule.required()
+      }),
+    ]
+  }),
+  defineField({
     name: 'services',
     title: 'Services',
     type: 'reference',
@@ -45,7 +76,6 @@ export const giftCardPage = defineType({
     to: [{ type: 'steps' }],
     validation: (rule) => rule.required(),
   }),
- 
   defineField({
     name: 'slider2',
     title: 'Slider 2',
