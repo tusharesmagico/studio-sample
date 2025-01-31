@@ -111,6 +111,38 @@ export const homePage = defineType({
       ]
     }),
     defineField({
+      name: 'qrBanner',
+      title: 'Scan to Download Banner',
+      type: 'object',
+      fields: [
+        {
+          name: 'text',
+          type: 'string',
+        },
+        {
+          name: 'startIndexOfGradientText',
+          type: 'number',
+        },
+        {
+          name: 'endingIndexOfGradientText',
+          type: 'number',
+        },
+        {name: "playStoreLink",
+          type: 'string'},
+        {
+          name: "appStoreLink",
+          type: 'string'
+        }
+        ,
+        defineField({
+          name: 'qrImage',
+          title: 'QR Image',
+          type: 'image',
+          validation: (rule) => rule.required()
+        }),
+      ]
+    }),
+    defineField({
       name: 'slider',
       title: 'Slider',
       type: 'reference',
