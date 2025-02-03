@@ -7,7 +7,7 @@ export const logosType = defineType({
   fields: [
     
     defineField({
-      name: 'Logos',
+      name: 'logos',
       type: 'array',
       of : [
         {
