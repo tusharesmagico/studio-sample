@@ -38,6 +38,30 @@ export const paymentGatewayPage = defineType({
       }),
     ]
   }),
+  defineField({name: "brandsWeServe",
+    title:"Brands We Serve"
+    ,type:"object", 
+  fields:[
+    defineField({
+      name: 'text',
+      title: 'Text',
+      type: 'string',
+    
+    }),
+    defineField({
+      name: 'subText',
+      title: 'SubText',
+      type: 'string',
+    
+    }),
+    defineField({
+      name: 'logos',
+      title: 'Logos',
+      type: 'reference',
+      to:[{type:"logos"}]
+    })
+  ]
+  }),
   defineField({
     name: 'bestInClass',
     title: 'BEST IN CLASS',
