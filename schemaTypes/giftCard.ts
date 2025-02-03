@@ -27,6 +27,18 @@ export const giftCardPage = defineType({
         name: 'endingIndexOfGradientText',
         type: 'number',
       },
+      {
+        name: 'text2',
+        type: 'string',
+      },
+      {
+        name: 'startIndexOfGradientText2',
+        type: 'number',
+      },
+      {
+        name: 'endingIndexOfGradientText2',
+        type: 'number',
+      },
     {name: "subText", type:'string'},
     {
       name: "experienceOnTataNeuButtonLink",
