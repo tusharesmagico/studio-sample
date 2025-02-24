@@ -16,5 +16,7 @@ import { aboutUsPage } from "./oboutUsPage";
 import { redressalMechanismType } from "./policy";
 import { servicesSection } from "./servicesType";
 import { supportPageSchema } from "./supportPage";
+import { footer } from "./footer";
+import { indexPage } from "./IndexPage";
 
-export const schemaTypes = [postType, postType2, collectionType,sliderType, testimonialType, faqType,infoCardsType, stepsType, homePage, upiPage, logosType, giftCardPage, billPayPage,paymentGatewayPage ,aboutUsPage , redressalMechanismType, servicesSection,supportPageSchema]
+export const schemaTypes = [postType, postType2, collectionType,sliderType, testimonialType, faqType,infoCardsType, stepsType, homePage, upiPage, logosType, giftCardPage, billPayPage,paymentGatewayPage ,aboutUsPage , redressalMechanismType, servicesSection,supportPageSchema, footer ,indexPage]
