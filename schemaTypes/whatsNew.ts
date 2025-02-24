@@ -30,6 +30,7 @@ export const sliderType = defineType({
               type: 'image',
               validation: (rule) => rule.required(),
             }),
+            
             defineField({
               name: 'text',
               title: 'Text',
